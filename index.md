@@ -3,7 +3,7 @@ layout: entry
 title: Annodoc documentation
 ---
 
-# Reuse of https://spyysalo.github.io/annodoc/
+# Reuse of <https://spyysalo.github.io/annodoc/>
 
 This is are an example of documentation created using the Annodoc
 system. It serves a double purpose as *documentation* for the Annodoc

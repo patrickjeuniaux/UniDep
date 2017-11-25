@@ -12,7 +12,7 @@ creating your own documentation using annodoc.
 
 ## Table of contents
 
-* [The BFG project](#the-fbg-project)
+* [The BFG project](#the-bfg-project)
 * [What is Annodoc?](#what-is-annodoc)
 * [How does it work?](#how-does-it-work)
 * [Getting started](#getting-started)

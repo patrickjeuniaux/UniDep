@@ -79,6 +79,31 @@ amod(book-7, black-6)
 ~~~
 
 
+Example 2 :
+
+The tall student reads the book while the teacher speaks about history
+
+    ~~~ sdparse
+    amod(student, tall)
+    nsubj(reads, student)
+    dobj(reads, book)
+    advcl(reads, talks)
+    nsubj(talks, teacher)
+    prep_about(talks, history)
+    ~~~
+
+~~~ sdparse
+amod(student, tall)
+nsubj(reads, student)
+dobj(reads, book)
+advcl(reads, talks)
+nsubj(talks, teacher)
+prep_about(talks, history)
+~~~
+
+
+
+
 
 ## What is Annodoc?
 

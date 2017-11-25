@@ -24,6 +24,8 @@ creating your own documentation using annodoc.
 
 ## The BFG project
 
+Example:
+
     ~~~ sdparse
     POS/NNP tags/NNS can/MD be/VB attached/VBN to/TO ( any part of ) the/DT sentence/NN text/NN ./.
     dep(tags-2, POS-1)
@@ -37,10 +39,20 @@ creating your own documentation using annodoc.
     det(part, any)
     prep(part, of)
     ~~~
-    
-    
 
-
+~~~ sdparse
+POS/NNP tags/NNS can/MD be/VB attached/VBN to/TO ( any part of ) the/DT sentence/NN text/NN ./.
+dep(tags-2, POS-1)
+nsubjpass(attached-5, tags-2)
+aux(attached-5, can-3)
+auxpass(attached-5, be-4)
+prep(attached-5, to-6)
+det(text-14, the-12)
+nn(text-14, sentence-13)
+pobj(to-6, text-14)
+det(part, any)
+prep(part, of)
+~~~
 
 
 

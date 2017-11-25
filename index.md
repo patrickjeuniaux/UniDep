@@ -84,6 +84,7 @@ Example 2 :
 The tall student reads the book while the teacher speaks about history
 
     ~~~ sdparse
+    the tall student reads the book while the teacher talks about history
     amod(student, tall)
     nsubj(reads, student)
     dobj(reads, book)
@@ -93,6 +94,7 @@ The tall student reads the book while the teacher speaks about history
     ~~~
 
 ~~~ sdparse
+the tall student reads the book while the teacher talks about history
 amod(student, tall)
 nsubj(reads, student)
 dobj(reads, book)

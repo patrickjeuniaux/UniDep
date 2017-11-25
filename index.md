@@ -3,6 +3,8 @@ layout: entry
 title: Annodoc documentation
 ---
 
+# Reuse of https://spyysalo.github.io/annodoc/
+
 This is are an example of documentation created using the Annodoc
 system. It serves a double purpose as *documentation* for the Annodoc
 system and as a *template* that you can use as a starting point for
@@ -24,7 +26,7 @@ creating your own documentation using annodoc.
 
 ## The BFG project
 
-Example:
+Example 0:
 
     ~~~ sdparse
     POS/NNP tags/NNS can/MD be/VB attached/VBN to/TO ( any part of ) the/DT sentence/NN text/NN ./.
@@ -54,7 +56,12 @@ det(part, any)
 prep(part, of)
 ~~~
 
+Example 1 :
 
+
+~~~ sdparse
+The/DT tall/JJ student reads the black book.
+~~~
 
 
 ## What is Annodoc?

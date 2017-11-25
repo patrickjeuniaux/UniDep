@@ -60,7 +60,13 @@ Example 1 :
 
 
 ~~~ sdparse
-The/DT tall/JJ student reads the black book.
+The/DET tall/ADJ student/NOUN reads/VERB the/DET black/ADJ book/NOUN ./.
+det(tall-2, The-1)
+amod(student-3, tall-2)
+nsubj(reads-4, student-3)
+obj(reads-4, book-7)
+det(book-7, the-5)
+amod(book-7, black-6)
 ~~~
 
 

@@ -3,13 +3,18 @@ layout: entry
 title: Annodoc annotation documentation support system
 ---
 
+
 This is a page of documentation created using the Annodoc
-system. It serves a double purpose as *documentation* for the Annodoc
+
+# Reuse of <https://spyysalo.github.io/annodoc/>
+
+This is are an example of documentation created using the Annodoc system. It serves a double purpose as *documentation* for the Annodoc
 system and as a *template* that you can use as a starting point for
 creating your own documentation using annodoc.
 
 ## Table of contents
 
+* [The BFG project](#the-bfg-project)
 * [What is Annodoc?](#what-is-annodoc)
 * [How does it work?](#how-does-it-work)
 * [Getting started](#getting-started)
@@ -19,6 +24,90 @@ creating your own documentation using annodoc.
 * [Collections](#collections)
 * [Configuration](#configuration)
 * [Troubleshooting](#troubleshooting)
+
+
+## The BFG project
+
+Example 0:
+
+    ~~~ sdparse
+    POS/NNP tags/NNS can/MD be/VB attached/VBN to/TO ( any part of ) the/DT sentence/NN text/NN ./.
+    dep(tags-2, POS-1)
+    nsubjpass(attached-5, tags-2)
+    aux(attached-5, can-3)
+    auxpass(attached-5, be-4)
+    prep(attached-5, to-6)
+    det(text-14, the-12)
+    nn(text-14, sentence-13)
+    pobj(to-6, text-14)
+    det(part, any)
+    prep(part, of)
+    ~~~
+
+~~~ sdparse
+POS/NNP tags/NNS can/MD be/VB attached/VBN to/TO ( any part of ) the/DT sentence/NN text/NN ./.
+dep(tags-2, POS-1)
+nsubjpass(attached-5, tags-2)
+aux(attached-5, can-3)
+auxpass(attached-5, be-4)
+prep(attached-5, to-6)
+det(text-14, the-12)
+nn(text-14, sentence-13)
+pobj(to-6, text-14)
+det(part, any)
+prep(part, of)
+~~~
+
+Example 1 :
+
+    ~~~ sdparse
+    The/DET tall/ADJ student/NOUN reads/VERB the/DET black/ADJ book/NOUN ./.
+    det(tall-2, The-1)
+    amod(student-3, tall-2)
+    nsubj(reads-4, student-3)
+    obj(reads-4, book-7)
+    det(book-7, the-5)
+    amod(book-7, black-6)
+    ~~~
+
+~~~ sdparse
+The/DET tall/ADJ student/NOUN reads/VERB the/DET black/ADJ book/NOUN ./.
+det(tall-2, The-1)
+amod(student-3, tall-2)
+nsubj(reads-4, student-3)
+obj(reads-4, book-7)
+det(book-7, the-5)
+amod(book-7, black-6)
+~~~
+
+
+Example 2 :
+
+The tall student reads the book while the teacher speaks about history
+
+    ~~~ sdparse
+    the tall student reads the book while the teacher talks about history
+    amod(student, tall)
+    nsubj(reads, student)
+    dobj(reads, book)
+    advcl(reads, talks)
+    nsubj(talks, teacher)
+    prep_about(talks, history)
+    ~~~
+
+~~~ sdparse
+the tall student reads the book while the teacher talks about history
+amod(student, tall)
+nsubj(reads, student)
+dobj(reads, book)
+advcl(reads, talks)
+nsubj(talks, teacher)
+prep_about(talks, history)
+~~~
+
+
+
+
 
 ## What is Annodoc?
 
